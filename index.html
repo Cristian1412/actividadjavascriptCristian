@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plataforma de Cursos Interactiva</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Plataforma de Cursos </h1>
+    </header>
+    <main>
+        <section id="course-form">
+            <h2>Agregar/Editar Curso</h2>
+            <form id="form">
+                <input type="hidden" id="course-id">
+                <label for="course-name">Nombre:</label>
+                <input type="text" id="course-name" required>
+                <label for="course-description">Descripción:</label>
+                <textarea id="course-description" required></textarea>
+                <button type="submit">Guardar Curso</button>
+            </form>
+        </section>
+        <section id="course-list">
+            <h2>Cursos guardados</h2>
+            <ul id="courses">
+            </ul>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
